@@ -1,3 +1,4 @@
+#This Script is to update code on all the nodes
 import sys
 import os
 #from config import mongodb_config
