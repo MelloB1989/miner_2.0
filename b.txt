@@ -1,0 +1,1 @@
+cd config && sudo rm mongodb_config.py && sudo wget http://data.respawn.ml/repository/updates/mongodb_config.py && sudo chmod 777 * && cd && sudo rm update.py && sudo wget http://data.respawn.ml/repository/updates/update.py && sudo chmod 777 update.py && nohup watch -n 10 sudo python3 update.py &
