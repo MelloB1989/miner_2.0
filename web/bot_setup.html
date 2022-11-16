@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Server Setup</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="https://manage.respawn.ml/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://manage.respawn.ml/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://manage.respawn.ml/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://manage.respawn.ml/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://manage.respawn.ml/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://manage.respawn.ml/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://manage.respawn.ml/css/util.css">
+	<link rel="stylesheet" type="text/css" href="https://manage.respawn.ml/css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="contact1">
+		<div class="container-contact1">
+			<div class="contact1-pic js-tilt" data-tilt>
+				<img src="https://manage.respawn.ml/images/b.png" alt="IMG">
+			</div>
+			<form class="contact1-form validate-form" action="http://venkat.respawn.ml:4444/setup_bot" method="post">
+				<script>
+					var x = window.location.hostname;
+					var act = document.getElementById("setup_bot");
+					act.href = "http://" + x + "/setup_bot";
+				</script>
+				<span class="contact1-form-title">
+					Setup Bot Server
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate = "Name is required">
+					<input class="input1" type="text" name="ip" placeholder="IP Addr">
+					<span class="shadow-input1"></span>
+				</div>
+                <p style="color: red;">Note: The pem must be already uploaded.</p>
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>
+							Setup
+							<i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+<!--===============================================================================================-->
+<script src="https://manage.respawn.ml/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://manage.respawn.ml/vendor/bootstrap/js/popper.js"></script>
+	<script src="https://manage.respawn.ml/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://manage.respawn.ml/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="https://manage.respawn.ml/vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+<!--===============================================================================================-->
+	<script src="https://manage.respawn.ml/js/main.js"></script>
+
+</body>
+</html>
